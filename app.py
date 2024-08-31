@@ -59,10 +59,7 @@ demo_ephemeral_chat_history = ChatMessageHistory()
 @app.route('/')
 def index():
     return render_template('index.html')
-    global embedding_model_toggle
-    embedding_model_toggle = request.json['selectedModel']
-    return jsonify(success=True)
-
+    
 
 @socketio.on('rating')
 def handle_rating(rating_data):

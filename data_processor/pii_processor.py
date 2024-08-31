@@ -3,24 +3,23 @@ from langchain_openai import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
 import json 
 
-model = ChatOpenAI(model="gpt-4")
+
+model = ChatOpenAI(model="gpt-4o")
 
 parser = StrOutputParser()
 
 
 prompt_template = PromptTemplate.from_template(
    """The input_text below is a json document. Scan the document, identify 
-   all occurences of any sensitive information such as phone numbers, ids, addresss, etc.
+   all occurences of any sensitive information such as phone numbers, personal identifiable ids, addresss, etc.
    Then, mask the sensitive information by replacing it with a placeholder.
-   For example, if the information is an id, replace last four digits with 'xxxx'. 
+   For example, if the information is a personal id, replace last four digits with 'xxxx'. 
    if the information is a phone number, replace it with 'xxx-xxx-xxxx'.
    if the information is an email, replace it with xxxx@xxxx.xxxx'
-   If the information is an any other nature, replace it with 'xxxxxxxx'.
    
    input_text: {input_text}
-   return the transformed document as a JSON object, all property names should be enclosed in double quotes.
-   
-   output_as_json:
+   Your output should only contain the transformed document, formatted into a JSON object, which begins and ends with curly brackets. 
+   Delete all leading and trailing ``` characters, and "json" wordings outside the JSON object. 
    """
 )
 
