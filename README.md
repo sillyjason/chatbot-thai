@@ -308,19 +308,26 @@ Open your browser, access the chatbot via port 5000:  *{IPv4 of App Node}:5000*
 
 <br><br>
 
-Take a look at the raw data, and feel free to ask any questions. 
+Take a look at the raw data, and feel free to ask any questions in Thai. 
 
 <br><br>
 
-<img width="1389" alt="image" src="https://github.com/sillyjason/chatbot-cb-2/assets/54433200/4498e847-52e4-43a3-93f9-8367c67b56ab">
+![image](https://github.com/user-attachments/assets/5f26ce77-8372-4430-9562-3e7c97950f89)
+
 
 <br><br>
+
+Seems the response is pretty grounded on the context stored in Couchbase!
+
+![image](https://github.com/user-attachments/assets/1d444c5d-0b6a-47da-9875-d47509ea79e9)
+
 
 Also note there are elements of user engagements. Feel free to give ratings to the comments. 
 
 <br><br>
 
-<img width="721" alt="image" src="https://github.com/sillyjason/chatbot-cb-2/assets/54433200/6b2c0673-734f-4f84-8e43-c8acc2b670a3">
+![image](https://github.com/user-attachments/assets/e9bd466a-f5b8-440d-a8f6-bc9563cdcdbd)
+
 
 <br><br>
 
