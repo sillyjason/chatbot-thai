@@ -227,7 +227,8 @@ We’ll use a series of Eventing functions to simplify the AI data pipeline, whi
 
 Download the “raw-data.json” file under directory templates/assets/. At “Import” tab under Data Tools, import the file into main.raw.raw collection.  
 
-<img width="1427" alt="image" src="https://github.com/sillyjason/chatbot-cb-2/assets/54433200/ba300a13-3c98-4861-b410-3e5c52ad6a16">
+![image](https://github.com/user-attachments/assets/0780b813-d58f-45d6-91ac-518a91ab8fb0)
+
 
 <br><br>
 
@@ -240,11 +241,12 @@ Download the “raw-data.json” file under directory templates/assets/. At “I
 
 <br>
 
-After import, go to main.raw.raw collection to check data successfully imported;
+After import, go to `main`.`raw`.`raw` collection to check data successfully imported;
 
 <br>
 
-<img width="1111" alt="image" src="https://github.com/sillyjason/chatbot-cb-2/assets/54433200/3174a8f5-ba92-4232-8dcc-435b117b8165">
+![image](https://github.com/user-attachments/assets/bbde3682-cbfa-45d4-bed9-be024ddccbd7)
+
 
 <br>
 
@@ -252,36 +254,40 @@ Then, go to main.raw.formatted collection. Data reformatting, masking, and label
 
 <br>
 
-<img width="1144" alt="image" src="https://github.com/sillyjason/chatbot-cb-2/assets/54433200/50808ee0-b6a5-4c97-a4f7-0bbf02e094ab">
+![image](https://github.com/user-attachments/assets/56405b25-09c1-4bcc-ad43-9e06949b0a7f)
+
 
 <br>
 
-Click to open the document that looks like *"content": "Dear Tony....* You’ll notice the format inconsistency, empty space, and sensitive data issues are taken care of
+Click to documents. You’ll notice the format inconsistency, empty space, and sensitive data issues are taken care of.
 
 <br>
 
-<img width="670" alt="image" src="https://github.com/sillyjason/chatbot-cb-2/assets/54433200/090e2f82-3b9f-47bf-aefb-ac9a269f31cb">
+![image](https://github.com/user-attachments/assets/92ea9ac5-92d2-41ff-bc2b-4832c6c59e1d)
 
-<br>
-<br>
+
+<br><br>
 
 >🙌🏻 note that in this demo, the sensitive data masking is done by prompting OPENAI with a API call. In production this defeats the purpose of data protection and instead, the model should be deployed locally hence local inferencing, a totally viable approach) 
 
-<br>
+<br><br>
 
 Also note, every doc is added a “type” field which is an enumeration of [“internal_policies”, “insurance_product”]
 
-<br>
 
-<img width="643" alt="image" src="https://github.com/sillyjason/chatbot-cb-2/assets/54433200/83543e6a-953f-4756-b1b1-c52e77b35573">
+<br><br>
 
-<br>
 
 Go to scope “data”. The 3 raw JSON objects are now pigeonholed into corresponding collections, automatically. Also note embedding is added. 
 
 <br>
 
-<img width="644" alt="image" src="https://github.com/sillyjason/chatbot-cb-2/assets/54433200/113e5053-0704-4a21-92b9-eafa53c2212a">
+![image](https://github.com/user-attachments/assets/655c2f36-a404-4c24-aaf5-7c28650d8c25)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e5b12ed9-16a8-4cb5-963b-abcc794e4e42)
+
 
 
 <br><br>
