@@ -33,9 +33,10 @@ Under the hood we're leveraging these technologies.
 
 - Couchbase serves as the data backend, housing not just the final vectors, but also transitory layers between unstructured data source and final RAG-ready state.
 - Couchbase Eventing is used to automate the function calling and data mutations.
-- OpenAI is used for embedding, metadata labelling, and text synthesis.
+- OpenAI is used for metadata labelling, and text synthesis. SentenceTransformer is used to local embeddings.
 
-![image](https://github.com/sillyjason/chatbot-cb-2/assets/54433200/f74f11c2-a732-4c9d-a3ad-918db209b553)
+![image](https://github.com/user-attachments/assets/a90551cf-4adc-4d3e-9ee9-88ba91d9fa86)
+
 
 
 
